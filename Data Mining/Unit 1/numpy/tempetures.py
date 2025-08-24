@@ -1,4 +1,5 @@
-import numpy as np 
+import numpy as np
+
 temperatures = [10.2 , 30.2 , 0 , 15 , 78 ]
 
 total = 0 
@@ -17,5 +18,10 @@ temps = np.array([
     [19, 25, 21]
 ])
 
+
+
 av = np.mean(temps)
 print(av)
+
+
+

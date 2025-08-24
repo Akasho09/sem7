@@ -97,3 +97,7 @@ for i in range(1, 6):   # 1 to 5
 # Looping lists
 for item in ["a", "b", "c"]:
     print(item)
+
+
+# multi dimension array :
+A multidimensional array is a collection of elements organized in a structure with more than one dimension

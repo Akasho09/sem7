@@ -1,5 +1,5 @@
 # Weakly Supervised Severity Estimation of Apple Scab Using CNN and Grad-CAM (Gradient-weighted Class Activation Mapping)
-
+    
 - Severity -> `suh·veh·ruh·tee`
 - Scab -> `skab`
 - orchards -> `aw·chuhdz`
@@ -33,14 +33,14 @@
 #### With the progress of deep learning, CNNs 
     - can now classify apple leaves with over 95% accuracy – but these models mostly tell whether a leaf is healthy or diseased, not how severe the infection is.
 
-- The challenge/Research gap is that most severity estimation methods require pixel-level lesion masks, which need expert annotation, are costly, and don’t scale well for large datasets.
+- The challenge/Research gap is that most severity estimation methods require pixel-level lesion masks, which need expert annotation, are   costly, and don’t scale well for large datasets.
 
 - So, there is a critical need for a method that is:
     - Weakly supervised (works with only image-level labels),
     - Scalable and cost-effective,
     - And provides fast severity estimation to support better crop management.
 
---------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------
 
 ## From “What” to “How Much”
 
@@ -59,7 +59,7 @@ So, it is not practical for building large-scale severity estimation systems.
 - With weakly supervised methods like Grad-CAM, we can localize diseased regions using only image-level labels – no need for detailed pixel annotations.
 - In fact, prior research – like Shukla et al., 2020 – has already shown that this approach is feasible.
 But their work stopped at visual localization. In other words, they generated heatmaps, but did not convert them into severity estimates.
-
+     
 ### The Gap & Our Contribution
 
 Currently, there is no validated method to convert Grad-CAM heatmaps into quantitative severity scores.
