@@ -54,9 +54,16 @@ Example: GPUs, supercomputers.
 
 
 ## Amdahl’s Law
-is a formula used to find the maximum possible speedup of a task when parts of it can be parallelized. It helps us understand the limits of improving performance by adding more processors or cores.
-- 📌 The Formula
+is a formula used to find the maximum possible speedup of a task when parts of it can be parallelized.
+- speedup is limited by the serial parts of a process
+- It helps us understand the limits of improving performance by adding more processors or cores.
+
+![alt text](image-7.png)
+
+> Speedup = Execution time without pipeline / Execution time with pipeline
+
 > 𝑆 = 1 / (1-p + p/n)
+- 1-p = serial part and p/n=>parellel part.
 
 > T = n/n+p-1
 
@@ -75,8 +82,17 @@ Where:
 
 
 
+## Cache coherence : 
+When multiple processors (or cores) in a system share a common memory space, each may have its own cache. To ensure correct program execution, it's essential that all caches have a consistent view of memory — this is what cache coherence addresses.
+
+- Cache coherence is a set of rules that ensures that:
+    - All copies of a memory location (in different caches) reflect the same value at any point in time.
+    - Updates to a memory location are visible to all processors in a consistent manner.
 
 
+## Berensteins Cond :
+![alt text](image-8.png)
+![alt text](image-9.png)
 
 
 
