@@ -14,13 +14,22 @@ is a technique in data mining that finds interesting relationships (associations
     - Freq of occurence of a itemset
 - Support : 
     - Fraction of Support count .
+- Lift = s(A union B)/ s(A).s(B).
+
 - ✅ Frequent Itemsets
     - Itemset whose support is greater than minSup(user defined).
     - Example: {milk, bread} occurs in 40% of all transactions → frequent wrt 30%(minSup)
+    - If a itemset is frequent then all its subsets are frequent .
+    - If a itemset is Infrequent then all its superSets are Infrequent .
 
 - ✅ Closed Itemsets
     - Frequent itemsets for which none of their supersets have the same frequency.
+    - freq + no immediate superset has same support .
     - Helps reduce redundant patterns.
+
+- Maximal Itemset :
+    - Freq + no Immediate superset is frequent.
+
 
 ### ✅ Association Rules
     - Implication expressions in the form A → B, meaning if A occurs, B is likely to occur.

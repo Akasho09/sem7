@@ -1,5 +1,4 @@
 ## 🔹 1. KDD, Process and Data Mining
-
 - KDD (Knowledge Discovery in Databases) → the overall process of finding useful knowledge from data.
 
 - Data Mining → one key step in KDD, focused on applying algorithms to discover patterns.

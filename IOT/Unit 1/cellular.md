@@ -20,7 +20,7 @@ A cellular system divides a geographic area into smaller regions called cells, e
     - ✔ Controls call setup, routing, and switching between cells
     - ✔ Handles mobility management, roaming, and authentication
     - ✔ Connects the cellular network to external networks like PSTN (Public Switched Telephone Network)
-    - Registers Insside MSC : 
+    - Registers Inside MSC : 
         1. Home Location Register (HLR)
         ✔ A database storing permanent information about subscribers
 
@@ -34,7 +34,6 @@ A cellular system divides a geographic area into smaller regions called cells, e
 
 ### Architecture :
 ![alt text](image.png)
-
 
 
 ## ✅ Frequency Reuse in Cellular Systems
@@ -51,7 +50,7 @@ Frequency reuse is a fundamental concept in mobile networks that allows the effi
 
 > Reuse Factor (N) : The number of cells in a cluster before frequency reuse is allowed.
 > Reuse Distance (D) : The distance between cells using the same frequency set.
-> D= Root(3).R.N
+> D = Root(3).R.N
 
 ## Handoff
 Handoff is a critical process in mobile networks that ensures uninterrupted communication as a mobile device moves from one cell to another.
