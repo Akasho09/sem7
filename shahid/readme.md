@@ -9,3 +9,7 @@ Press Ctrl + Shift + P (or Cmd + Shift + P on Mac).
 Search for “Python: Select Interpreter”.
 
 Pick the one that points to Python 3.x (same version you use with python3 in terminal).
+
+
+
+-> source path/to/venv/bin/activate
