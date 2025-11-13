@@ -16,12 +16,12 @@ Where:
 ## Logistic Regression 
 - sigmoid fn 
 - discrete values .
-
 ![alt text](image-1.png)
 
 ## K-NN
 - uses Euclideans distance .
-> root( (y2-y1)^2 + (x2-x1)^2 )
+> root((y2-y1)^2 + (x2-x1)^2)
+- of jo predict karna with everyone .
 
 ## Naive Bayers classification :
 - conditional prob
