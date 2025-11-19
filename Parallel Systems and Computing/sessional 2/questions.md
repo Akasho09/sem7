@@ -4,7 +4,6 @@
 - rate = N/Ts+Tp 
 - /10^6 => MIPS 
 
-
 ## An application runs on a 9-computer cluster. Total runtime on the cluster is T. Of this, 25% of T runs simultaneously on all 9 computers; the remaining time runs on a single computer. Find the effective speedup over a single computer and the percentage of code parallelized.
 
 - Speed up = t / (3t/4 + 9*t/4)
@@ -13,7 +12,6 @@
 
 ## Q3 
 ![alt text](image-1.png)
-
 
 ## 
 L1: for (I = 1; I <= 4096; I++) {
