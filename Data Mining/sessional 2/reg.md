@@ -42,7 +42,14 @@ A Decision Tree is a supervised learning algorithm that splits data into branche
 - Entropy = 1 → impure (equal distribution)
 > Entropy(S)=−p1​log2​(p1/p1+p2​)−p2​log2​(p2/p1+p2​)− ⋯ −pn​log2​(pn​)
 
+2. Information Gain 
+ - shows how much entropy reduces after splitting a node.
 > Information gain = Entropy(whole data) -  ∑(​∣Sv∣/∣S​∣​)Entropy(Sv​)
+
+3. 3️⃣ Gini Index
+A measure of impurity used by CART (Classification and Regression Tree).
+✔ Lower Gini = purer node
+✔ Faster to compute than entropy
 
 - highest information gain => root ;
 

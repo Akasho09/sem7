@@ -15,6 +15,7 @@ is a technique in data mining that finds interesting relationships (associations
 - Support : 
     - Fraction of Support count .
 - Lift = s(A union B)/ s(A).s(B).
+- Lift measures how much more likely A and B occur together compared to if they were independent.
 
 - ✅ Frequent Itemsets
     - Itemset whose support is greater than minSup(user defined).
@@ -38,11 +39,17 @@ is a technique in data mining that finds interesting relationships (associations
 #### Support and Confidence for Association Rule.
 - For A->B , Following conditions shoukd satisfy : 
     - ✅ Support
+        - Support refers to the relative frequency of an item set in a dataset. 
         - S = sigma(A union B)/Total 
 
     - ✅ Confidence
         - Measures the reliability of the inference made by the rule.
+        - Confidence is a measure that indicates how likely it is that item Y will appear in a transaction given that item X is already in the transaction.
         - Confidence = sigma(A union B)/sigma(A).
+    
+    - Lift :
+        - In data mining, lift is a measure that evaluates the effectiveness of a predictive model or association rule by comparing its results to a random chance baseline.
+        
 
 > Support >= minSup Threshold
 > Confidence >= minConf Threshold

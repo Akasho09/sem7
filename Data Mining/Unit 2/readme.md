@@ -8,9 +8,9 @@ Data preprocessing is a crucial step in the Knowledge Discovery process. It invo
 - Collection of data objects and their attributes 
 - atribute is the property of data and collection of atributes descrbe a object
 
-### Types of atributes :
+### Types of atributes : 
 1. Nominal atributes :
-    - cant be compared eg serail no , account no , name , zip code .
+    - cant be compared eg serial no , account no , name , zip code .
 
 2. Ordinal : 
     - ranikng , height , taste , marks etc.
