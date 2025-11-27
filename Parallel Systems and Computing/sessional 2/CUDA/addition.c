@@ -18,8 +18,7 @@ global void vecAdd(int *A, int *B, int *C)
 // ------------------------------
 // Main Function
 // ------------------------------
-int main()
-{
+int main(){
     int size = N * sizeof(int);
 
     // Host (CPU) arrays
