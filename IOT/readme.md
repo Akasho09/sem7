@@ -7,4 +7,6 @@ Syllabus for sessional II
 
  - and the important presentation group-wise  are "Group 1, 2, 3,7,9,12,15,16 "
  - https://docs.arduino.cc/built-in-examples/
+ - https://drive.google.com/drive/folders/10rkbbLXOX2av3UWehVka5Rc4aJnYdZvg
+
  

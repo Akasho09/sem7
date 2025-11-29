@@ -26,7 +26,7 @@ Proximity sensor
 
 2. Connectivity :
 - wired or wireless 
-![alt text](image.png)
+![](image.png)
 
 3. IOT Cloud or 
 
