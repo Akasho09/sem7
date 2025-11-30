@@ -41,6 +41,19 @@
 4. MAL
 ![alt text](image-11.png)
 
+> Throghput corresponding to MAL  : 1/MAL . mips 
+> Throghput Coresponding to tu : 1/tu.MAL or f/MAL  
+
+- Upper bound and lower bound on MAL.
+![alt text](image-17.png)
+
+
+## Insert a cycle : 
+- Insert a delay and avoid one colloion. 
+==> Modified Reservation table will be : ![ ](image-18.png)
+- Make Transition diag and simple cycle , greedy cycles .
+==> New MAL will be lower bound ie Max checkmarks in any row 
+- and Optimal throughput will be 1/MAL*tu.
 
 
 ## 📂 Types of Branch Prediction
@@ -100,14 +113,26 @@ A selector chooses which predictor to trust based on which one has been more acc
 This helps improve accuracy in complex scenarios where simple predictors fail.
 
 => 97%
+---
 
-
+| Predictor                 | Idea                                  | Strength         |
+| ------------------------- | ------------------------------------- | ---------------- |
+| **2-bit predictor**       | Saturating counter                    | Good for loops   |
+| **(m, n) predictor**      | m-bit history + n-bit counters        | Learns patterns  |
+| **Tournament predictor**  | Local + global + selector             | Best accuracy    |
+| **Alpha 21264 predictor** | Advanced tournament with 4 components | Industry-leading |
 
 ## Tomasulo’s algorithm 
-is a hardware algorithm used in modern CPUs to dynamically schedule instructions to execute out-of-order while preserving data dependencies and avoiding hazards.
+is a hardware algorithm used in modern CPUs to **dynamically schedule** instructions to execute out-of-order while preserving data dependencies and avoiding hazards.
 
+![alt text](image-16.png)
+### Goals:
+- Increase instruction-level parallelism (ILP)
+- Allow instructions to execute as soon as their data operands are available
+- Avoid pipeline stalls due to RAW, WAR, and WAW hazards
+- Perform register renaming dynamically
 
-✅ Key Components
+### ✅ Key Components
 1. Reservation Stations (RS):
 - Buffers that hold instructions waiting for operands.
 - They store instruction details and operands once available.
@@ -120,7 +145,7 @@ is a hardware algorithm used in modern CPUs to dynamically schedule instructions
 3. Register Alias Table (RAT):
 - Keeps track of where the latest version of a register is being computed.
 - Helps rename registers to avoid false dependencies.
-
+ 
 
 ### ✅ How Tomasulo's Algorithm Works – Step by Step
 1. Instruction Issue

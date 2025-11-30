@@ -47,6 +47,36 @@
     - Fault tolerance: If one component fails, app still works.
     - Consistency: All users should see “correct” or “eventually correct” state.
 
+## Distributed Application Layers :
+- Distributed applications are typically organized into layers, each with a specific function. This layered architecture simplifies design, communication, and scalability.
+1. Presentation Layer (Client Layer)
+    - Handles user interface
+    - Runs on the user’s machine
+    - Example: Web browser, mobile app
+- Responsibilities:
+    - Display data to user
+    - Take input from user
+    - Send requests to application layer
+
+2. Application/Logic Layer (Middle Layer)
+- Contains the business logic
+- Processes user requests
+- Often implemented as application servers
+- Responsibilities:
+    - Authentication
+    - Processing rules
+    - Coordinating between client and database
+- Example:
+    - A server that processes "withdraw money" or "book ticket" requests.
+
+3. Data Layer (Database Layer)
+- Stores all the data used by the distributed application
+- Consists of databases, file systems, or distributed storage
+- Responsibilities:
+    - Managing data
+    - Query processing
+    - Ensuring data consistency
+
 ## 4. Paradigms of Distributed Computing
 - These are common models/architectures used to design distributed systems.
 
@@ -166,15 +196,15 @@
 1. Agent : The actual program/code that performs tasks and migrates.
 2. Agent Server / Agent Platform
 - A host that provides:
-- execution environment
-- security
-- communication support
-- migration APIs
+    - execution environment
+    - security
+    - communication support
+    - migration APIs
 3. Agent Migration Mechanism
 - Handles movement of:
-- code
-- state
-- data
+    - code
+    - state
+    - data
 4. Communication System
 - Supports collaboration between agents.
 
@@ -200,3 +230,18 @@
 - Return / Termination
     - Goes back to the source or ends after task completion.
 
+## ⭐ ORB (Object Request Broker)
+- An ORB (Object Request Broker) is a middleware component of CORBA architecture that enables communication between distributed objects located on different machines.
+- It acts like a software bus that allows objects to:
+    - Send requests
+    - Receive responses
+    - Interact with remote objects as if they were local
+
+
++-------------+          +-------------+
+|   Client    |          |   Server    |
+|  Object     |          |  Object     |
++------|------+          +------|------+
+       |                         |
+       |     ORB (Middleware)    |
+       +--------------------------+

@@ -80,8 +80,6 @@ Where:
 ### key points 
 - ✔ The serial portion becomes the bottleneck or It shows that the non-parallelizable part of the task limits the overall speedup.
 
-
-
 ## Cache coherence : 
 When multiple processors (or cores) in a system share a common memory space, each may have its own cache. To ensure correct program execution, it's essential that all caches have a consistent view of memory — this is what cache coherence addresses.
 
