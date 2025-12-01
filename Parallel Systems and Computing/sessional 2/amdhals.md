@@ -13,9 +13,9 @@
 - The speedup of a program using multiple processors can increase linearly with the number of processors, if the problem size scales with the number of processors.
 - states that if the problem size increses parellel size also increses but not sequential . => sequential doesnt become bottleneck .
 - Amdhal assumes fixed problem size .
-- Speeed Up = a+(a-1)n
-  - a=sequential . 
-  - n= improveent factor.
+- Speeed Up = n+(1-n)s.
+  - s = sequential . 
+  - n = improveent factor.
 
 
 ## ☀️ Sun and Ni’s Law (Scaled Speedup Model)
