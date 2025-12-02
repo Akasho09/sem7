@@ -10,3 +10,20 @@ Syllabus for sessional II
  - https://drive.google.com/drive/folders/10rkbbLXOX2av3UWehVka5Rc4aJnYdZvg
 
  
+ - Arduino
+Communication (starting 3)
+Digital (Starting 5)
+Just go through string, USB, control structure, communication
+
+
+Arduino codes:
+Do
+Basics
+Digital (1st 4)
+Analog (full)
+Sensor 
+Display
+Arduino ISP (read)
+
+Leave 
+Control structure, USB, string etc

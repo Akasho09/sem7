@@ -4,10 +4,10 @@
 ![alt text](image-6.png)
 
 ##  Channels used in GSM 
-| Type                      | Purpose                                                                                                         |
-| ------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| **1️⃣ Physical Channels** | Actual radio frequencies and time slots used for transmission                                                   |
-| **2️⃣ Logical Channels**  | Functional divisions of information (like signaling, control, and user data) carried over the physical channels |
+| Type                     | Purpose                                                                                                        |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------|
+| **1️⃣ Physical Channels**  | Actual radio frequencies and time slots used for transmission                                                   |
+| **2️⃣ Logical Channels**   | Functional divisions of information (like signaling, control, and user data) carried over the physical channels |
 
 1. Physical Channels
 - A physical channel in GSM is defined by:
@@ -16,6 +16,9 @@
 - Each GSM carrier supports 8 time slots — numbered TS0 to TS7 — forming 8 physical channels.
 - Each slot is a physical channel, meaning one frequency + one time slot = one channel.
 > 📶 This technique is called TDMA (Time Division Multiple Access).
+
+- A physical channel in GSM refers to the actual radio resources used for communication, defined by a specific time slot in a TDMA frame on a particular frequency.
+- It is the physical medium over which bits are transmitted.
 
 2. Logical channels 
 - Logical channels define what kind of information is sent on the physical channel — e.g., voice, control signals, synchronization data, etc.| 
@@ -38,9 +41,9 @@ Category                      | Purpose                                    |
 2. Control Channels (CCH)
 - Control channels manage network access, synchronization, and handover.
 
-They are divided into three main types:
+They are divided into three main types: (BSF , RAP , SSF)
 
-1. 1️⃣ Broadcast Channels (BCH)
+1. 1️⃣ Broadcast Channels (BCH) 
 - Used by BTS to broadcast information to all mobiles in a cell.
 - Used by the base station (BTS) to broadcast information to all mobiles in the cell.
 
@@ -89,9 +92,9 @@ They are divided into three main types:
 - When the mobile detects it has entered a new Location Area (different LAI):
 - It sends a Location Update Request via the SDCCH (Standalone Dedicated Control Channel).
 - The VLR associated with that area:
-- Registers the mobile,
-- Updates the HLR (Home Location Register),
-- And deletes it from the old VLR’s record.
+    - Registers the mobile,
+    - Updates the HLR (Home Location Register),
+    - And deletes it from the old VLR’s record.
 - ✅ This ensures the network always knows which VLR area the mobile is currently in.
 
 
@@ -104,11 +107,11 @@ There are two cases:
 1. Mobile-Originated Call (MOC) → You make a call
 2. Mobile-Terminated Call (MTC) → Someone calls you
 
-1. 📞 A. Mobile-Originated Call (Outgoing Call)
+1. Mobile-Originated Call (Outgoing Call)
     1. Call Request
     - User dials a number and presses “Call”.
     - MS sends a Channel Request via RACH (Random Access Channel).
-
+    
     2. Channel Assignment
     - BTS replies with AGCH (Access Grant Channel) → assigning an SDCCH.
 
@@ -184,6 +187,16 @@ There are two cases:
 | **2. Intra-BSC / Inter-cell Handoff** | Between two cells controlled by the same BSC.                             |
 | **3. Inter-BSC Handoff**              | Between two cells under different BSCs but same MSC.                      |
 | **4. Inter-MSC Handoff**              | Between two cells under different MSCs (more complex, signaling via SS7). |
+
+----
+
+| Type of Handoff            | Area of Handoff            | Controlled By | Example Scenario                           |
+| -------------------------- | -------------------------- | ------------- | ------------------------------------------ |
+| **Intra-Cell**             | Same BTS                   | BTS/BSC       | Change of channel inside same cell         |
+| **Inter-Cell (Intra-BSC)** | Between BTS under same BSC | BSC           | Moving within same BSC region              |
+| **Inter-BSC**              | Between different BSCs     | MSC           | Moving from one controller area to another |
+| **Inter-MSC**              | Between different MSCs     | Both MSCs     | Moving across city/region boundaries       |
+
 ![alt text](image-10.png)
 
 ### 📡 Handoff Process Steps

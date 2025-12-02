@@ -1,5 +1,7 @@
 ## CDMA (Code Division Multiple Access)
  is a spread spectrum communication technique used in 2G and 3G cellular systems (like IS-95 and cdma2000).
+- CDMA (Code Division Multiple Access) is a multiple access technique where multiple users share the same frequency channel simultaneously, but each user is assigned a unique code.
+- These codes are orthogonal, meaning their dot product = 0.
 
  ![alt text](image-11.png)
 
@@ -22,6 +24,8 @@ c4 +1 -1 -1 +1
 
 - Multiply d1.c1 + d2.c2 + d3.c3 + d4.c4  , each seprately with 4 diff bits of c's
 
+- To get messages 
+> c1's bit will be = common channel data * c1 
 =>> (d1.c1 + d2.c2 + d3.c3 + d4.c4 ) * c1 = c1's message and so on .
 
 
