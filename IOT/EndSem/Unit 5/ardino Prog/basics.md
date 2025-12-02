@@ -111,3 +111,25 @@ void loop(){
 
 ```
 
+
+## 
+
+| Type                 | Flexibility | Speed             | Power Use | Cost        | Applications        |
+| -------------------- | ----------- | ----------------- | --------- | ----------- | ------------------- |
+| GPP                  | Very High   | Moderate          | High      | High        | PCs, phones         |
+| Single-function      | Very Low    | High for its task | Very Low  | Low         | Timers, controllers |
+| Application-specific | Medium      | Very High         | Low       | Medium–High | DSP, GPUs           |
+
+
+## 
+| Feature      | Raspberry Pi                              | Arduino                            |
+| ------------ | ----------------------------------------- | ---------------------------------- |
+| Type         | Mini-computer                             | Microcontroller board              |
+| OS           | Runs Linux OS                             | No OS (bare-metal)                 |
+| Processing   | Multi-core GHz                            | MHz-level                          |
+| Memory       | RAM (512MB–8GB)                           | Few KB SRAM                        |
+| Applications | Complex computing, Python, multimedia, AI | Real-time control, sensors, motors |
+| I/O          | Digital + HDMI + USB                      | Mostly GPIO                        |
+| Power        | High                                      | Low                                |
+
+

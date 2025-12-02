@@ -9,8 +9,8 @@
 - The BTS continuously transmits FCCH bursts.
 - FCCH contains a pure sine wave tone.
 - The mobile station uses this tone to:
-- Correct its local oscillator frequency
-- Align with BTS carrier frequency
+    - Correct its local oscillator frequency
+    - Align with BTS carrier frequency
 - Purpose:
     - Ensures MS is operating on the exact same frequency as BTS.
 
