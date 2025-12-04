@@ -67,3 +67,58 @@
 
 ![alt text](image-5.png)
 
+
+## xplain the principle of sampling and quantization. Discuss its effect o nincreasing
+- (i). sampling frequency (i) quantization levels of image.
+
+![alt text](image-6.png)
+
+1. Sampling – Principle
+- Sampling is the process of converting a continuous image (analog image) into a digital image by dividing it into a fine grid of pixels.
+- Each pixel represents the image intensity at that spatial location.
+- Higher sampling → more pixels → better spatial resolution.
+- Mathematically:
+    - A continuous 2D image f(x,y) is sampled at discrete points:
+    - f(mTx​,nTy​)
+    - Tx​,Ty are sampling intervals.
+
+2. Quantization – Principle
+- Quantization converts continuous intensity values into a set of discrete gray levels.
+- Example: 8-bit image → 256 levels
+- The process maps the continuous range to fixed intervals.
+- Mathematically:
+    - fq​(m,n)=Q(f(m,n))
+- where 𝑄 is the quantizer.
+
+### (i) Effect of Increasing Sampling Frequency
+- Sampling frequency = number of samples per unit distance (or pixels per inch).
+- Higher sampling frequency means:
+    - More image pixels
+    - Higher spatial resolution
+    - Better edge details
+    - Reduced aliasing (distortion due to undersampling)
+- Benefits:
+    - Image looks sharper
+    - Fine textures preserved
+    - Better for medical imaging, satellite images, etc.
+
+- Disadvantages:
+    - Larger file size
+    - More memory required
+    - More processing time
+
+### (ii) Effect of Increasing Quantization Levels
+- Quantization levels = number of possible gray values (2ⁿ levels for n bits).
+- Higher quantization levels mean:
+    - More accurate representation of brightness
+    - Smoother shading
+    - Reduced quantization noise (banding effect)
+- Benefits:
+    - Better visual quality
+    - Smooth transitions (no stepping effect)
+    - Suitable for medical and scientific images
+- Disadvantages:
+    - Increased bits per pixel
+    - More memory needed
+    - Larger file size.
+

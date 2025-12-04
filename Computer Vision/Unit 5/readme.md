@@ -63,6 +63,21 @@
 ![alt text](image-1.png)
 ![alt text](image-2.png)
 
+### IMPS :
+| **Layer No.** | **Layer Name** | **Type**              | **Input Size**  | **Kernel / Params**                   | **Stride** | **Output Size**  | **Activation**                          |
+| ------------- | -------------- | --------------------- | --------------- | ------------------------------------- | ---------- | ---------------- | --------------------------------------- |
+| **0**         | Input Layer    | Image                 | **32 × 32 × 1** | –                                     | –          | **32 × 32 × 1**  | –                                       |
+| **1**         | C1             | Convolution           | 32 × 32 × 1     | 6 filters, **5×5**                    | 1          | **28 × 28 × 6**  | **tanh**                                |
+| **2**         | S2             | Subsampling (Pooling) | 28 × 28 × 6     | 2×2 average pooling                   | 2          | **14 × 14 × 6**  | **tanh**                                |
+| **3**         | C3             | Convolution           | 14 × 14 × 6     | 16 filters, **5×5**                   | 1          | **10 × 10 × 16** | **tanh**                                |
+| **4**         | S4             | Subsampling (Pooling) | 10 × 10 × 16    | 2×2 average pooling                   | 2          | **5 × 5 × 16**   | **tanh**                                |
+| **5**         | C5             | Convolution           | 5 × 5 × 16      | 120 filters, **5×5**, fully connected | 1          | **1 × 1 × 120**  | **tanh**                                |
+| **6**         | F6             | Fully Connected       | 120 → 84        | Weights = 120×84                      | –          | **84**           | **tanh**                                |
+| **7**         | Output Layer   | Fully Connected       | 84 → 10         | 10 neurons                            | –          | **10**           | **RBF** (or softmax in modern versions) |
+
+- 4 size decreses in C and in S to half * no of filters.
+- O = I − K + 1.
+
 #### Key points for exams:
 - Introduced convolution + pooling for images.
 - Used weight sharing and local receptive fields.
@@ -90,10 +105,29 @@
 
 - Impact:
     - AlexNet triggered the deep learning boom, proving that large CNNs trained on big datasets can greatly outperform traditional methods.
+- 
+| **Layer No.** | **Layer Type** | **Input Size**         | **Kernel / Filter Size** | **Stride** | **Padding** | **No. of Filters / Neurons** | **Output Size**   | **Activation** |
+| ------------- | -------------- | ---------------------- | ------------------------ | ---------- | ----------- | ---------------------------- | ----------------- | -------------- |
+| **1**         | Input          | **227 × 227 × 3**      | –                        | –          | –           | –                            | **227 × 227 × 3** | –              |
+| **2**         | Conv1          | 227 × 227 × 3          | **11 × 11**              | **4**      | **0**       | 96 filters                   | **55 × 55 × 96**  | ReLU           |
+| **3**         | MaxPool1       | 55 × 55 × 96           | **3 × 3**                | 2          | 0           | –                            | **27 × 27 × 96**  | –              |
+| **4**         | Conv2          | 27 × 27 × 96           | **5 × 5**                | 1          | **2**       | 256 filters                  | **27 × 27 × 256** | ReLU           |
+| **5**         | MaxPool2       | 27 × 27 × 256          | **3 × 3**                | 2          | 0           | –                            | **13 × 13 × 256** | –              |
+| **6**         | Conv3          | 13 × 13 × 256          | **3 × 3**                | 1          | 1           | 384 filters                  | **13 × 13 × 384** | ReLU           |
+| **7**         | Conv4          | 13 × 13 × 384          | **3 × 3**                | 1          | 1           | 384 filters                  | **13 × 13 × 384** | ReLU           |
+| **8**         | Conv5          | 13 × 13 × 384          | **3 × 3**                | 1          | 1           | 256 filters                  | **13 × 13 × 256** | ReLU           |
+| **9**         | MaxPool3       | 13 × 13 × 256          | **3 × 3**                | 2          | 0           | –                            | **6 × 6 × 256**   | –              |
+| **10**        | Flatten        | 6 × 6 × 256 = **9216** | –                        | –          | –           | –                            | **9216**          | –              |
+| **11**        | FC6            | 9216                   | –                        | –          | –           | **4096 neurons**             | **4096**          | ReLU + Dropout |
+| **12**        | FC7            | 4096                   | –                        | –          | –           | **4096 neurons**             | **4096**          | ReLU + Dropout |
+| **13**        | FC8 (Output)   | 4096                   | –                        | –          | –           | **1000 neurons**             | **1000 classes**  | Softmax        |
+
+> O=S(I−K+2P)​+1
+- NEW SIZE = (prev-f+s)/4
 
 ![alt text](image-6.png)
 ![alt text](image-4.png)
-- NEW SIZE = (prev-f+s)/4
+
 #### Parameters :
 ![alt text](image-5.png)
 

@@ -21,11 +21,13 @@
 
 2. Step 2: Compute Covariance Matrix
 - Matrix that shows how variables are related.
+- /(N-1).
+- For X1 and X2 signs matter .
 - [ X1       X1.X2
     X2.X1    X2   ]
 
 3. Step 3: Compute Eigenvalues & Eigenvectors
-> S = S-lamda.I = 0 .
+> S = | S-lamda.I | = 0 .
 - Perform eigen decomposition of the covariance matrix.
 
 4. Step 4: Sort Eigenvalues

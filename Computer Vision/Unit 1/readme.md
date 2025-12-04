@@ -1,79 +1,106 @@
 # CV  
+
 - CV vs Image Processing vs Computer graphics
+
 ![alt text](image.png)
 
-
 ##  image 
+
 - a 2D or 3D matrix of pixel intensity values.
 - Each pixel contains a number (or set of numbers) describing how bright or colorful it is.
 
 ### 📌 Types of Images in Computer Vision
+
 1. Grayscale Image
+
 - Represents brightness only.
 - Stored as a 2D matrix.
 - Each pixel is a value from 0 (black) to 255 (white).
 
 2. Color Image (RGB)
+
 - Represents Red, Green, Blue channels.
 - Stored as a 3D matrix: height × width × 3.
 
 3. Binary Image
+
 - Only 0 or 1 values.
 - Used for masks, segmentation, thresholding.
 
 #### An analog image 
+
 - is a continuous image—smooth and natural—like what you see with your eyes or on film cameras.
 
 #### 2️⃣ Digital Image
+
 - A digital image is a numeric representation of an analog image stored in a computer.
+
 ![alt text](image-9.png)
 
-
 ## Digital Image Processing
+
 - Digital Image Processing is the field of computer science where digital images are processed using computer algorithms to improve them or extract useful information.
 - 🎯 Goals of DIP
-    1. Enhancement
-    Making an image look better
-    (e.g., brightness, contrast, sharpening)
-    2. Restoration
-    Removing noise, blur, distortions
-    3. Analysis
-    Object detection, segmentation, pattern recognition
-    4. Compression
-    Reducing image size (JPEG, PNG)
-    5. Visualization
-    Converting raw data into a visible image
 
+  1. Enhancement
+
+    Making an image look better
+
+    (e.g., brightness, contrast, sharpening)
+
+  2. Restoration
+
+    Removing noise, blur, distortions
+
+  3. Analysis
+
+    Object detection, segmentation, pattern recognition
+
+  4. Compression
+
+    Reducing image size (JPEG, PNG)
+
+  5. Visualization
+
+    Converting raw data into a visible image
 - 🔧 Common Operations in DIP
+
 1. 1️⃣ Image Enhancement
+
 - Brightness & contrast adjustment
 - Histogram equalization
 - Sharpening
 - Smoothing/Blurring
 
 2. 2️⃣ Image Restoration
+
 - Noise removal
 - Deblurring
 - Filtering (Gaussian, median, etc.)
 
 3. 3️⃣ Image Segmentation
+
 - Separating objects from the background
 - Thresholding
 - Edge detection
 
 4. 4️⃣ Image Compression
+
 - Lossy (JPEG)
 - Lossless (PNG)
 
 5. 5️⃣ Image Representation
+
 - RGB, grayscale, binary images
 - Pixel matrix format
 
 > The word “spatial” simply refers to space — things related to position, size, shape, distance, or arrangement.
 
 ## The Human Visual System 
--  refers to the biological system that allows humans to see, interpret, and understand visual information.
+
+- refers to the biological system that allows humans to see, interpret, and understand visual information.
 - 👉 HVS = Eyes + Optic Nerve + Visual Cortex (Brain)
+
 ![alt text](image-10.png)
 
 | Human Visual System   | Digital Image Processing |
@@ -83,79 +110,95 @@
 | Adaptation to light   | Fixed dynamic range      |
 | Rich color perception | Quantized color values   |
 
-
 ## Image Formation :
+
 1. 1️⃣ Light rays from an object enter the eye
+
 - Light passes through the cornea, the transparent outer layer.
 
 2. 2️⃣ The light is controlled by the pupil
+
 - The iris adjusts the size of the pupil to control how much light enters.
 - Bright light → pupil becomes small
 - Dim light → pupil becomes large
 
 3. 3️⃣ The lens focuses the light
+
 - The lens changes its shape (becomes thick or thin) using ciliary muscles.
 - This process is called accommodation.
 - Its job is to make light rays fall sharply on the retina.
 
 4. 4️⃣ An image is formed on the retina
+
 - The image formed on the retina is:
     - Real (because light rays actually meet)
     - Inverted (upside-down)
     - Reduced (smaller than the object)
 
 5. 5️⃣ Photoreceptors convert light to electrical signals
+
 - The retina contains:
     - Rods (brightness)
     - Cones (color)
 
 6. 6️⃣ The optic nerve sends the signals to the brain
+
 - The brain (visual cortex) processes the signals and interprets the image.
 - The brain automatically flips the inverted image upright.
 
 ![alt text](image-11.png)
 
-
 ## 1.6 Classification of Digital Images
+
 - Digital images can be classified based on how they are represented, what information they contain, or how they are sensed.
 
 ### 1️⃣ Based on Image Representation
+
 1. a) Binary Images
+
 - Each pixel → 0 or 1
 - Used in masks, thresholding, shape detection
 
 2. b) Grayscale Images
+
 - Each pixel → intensity value (0–255)
 - No color, only brightness
+
 ![alt text](image-12.png)
 
 3. c) Color Images (RGB)
+
 - Each pixel has 3 components: Red, Green, Blue
 - Stored as 3D matrix
+
 ![alt text](image-13.png)
+
 ![alt text](image-14.png)
 
 4. d) Multispectral Images
+
 - Captured in multiple wavelengths (3–10 bands)
 - Used in satellites and remote sensing
 
 5. e) Hyperspectral Images
+
 - Have dozens to hundreds of bands
 - Very detailed spectral information
 - Used in agriculture, mineral detection, medical imaging
 
-
 ## 📘 Elements of an Image-Processing System
+
 - An image-processing system consists of hardware, software, and algorithms used to acquire, store, process, analyze, and display images.
+
 The main elements are:
 
 1. Image Acquisition System (Sensors & Cameras)
+
 - This is the first and most important component.
 - Functions:
     - Capture real-world images.
     - Convert light into electrical signals.
     - Perform sampling and quantization to produce digital images.
-
 - Devices:
     - Digital cameras
     - Mobile camera sensors
@@ -163,60 +206,72 @@ The main elements are:
     - Scanners
     - X-ray/MRI sensors (medical)
     - Satellite sensors
-
 - Additional Components:
 - Lens system
 - Illumination source
 - Analog-to-Digital Converter (ADC)
 
 ## 📘 CCD and CMOS Image Sensors
+
 - Digital cameras use image sensors to convert light into electrical signals.
 - The two main sensor technologies are:
+
 1. CCD → Charge-Coupled Device
 2. CMOS → Complementary Metal Oxide Semiconductor
+
 - Both perform the same function but differ in design, speed, power consumption, and cost.
 
 ### CCD (Charge-Coupled Device) Sensor
+
 - A CCD is an image sensor where light is converted into charge, and the charge is transferred across the chip and read at one point.
+
 #### How CCD Works
+
 1. Light falls on each pixel → creates electron charge.
 2. Charges from all pixels are shifted (coupled) row by row.
 3. Entire pixel array is read sequentially by a single amplifier.
 4. Output is converted into a digital signal.
 5. Diagram (simple text form)
-> Light → Pixel Array → Charge Transfer → Readout Register → ADC → Digital Image
 
+> Light → Pixel Array → Charge Transfer → Readout Register → ADC → Digital Image
+![alt text](image-15.png)
 #### Advantages
+
 1. Very high image quality
 2. Low noise
 3. Excellent sensitivity (good in low light)
 4. Uniform output across pixels
 
 #### Disadvantages
+
 1. Slower readout (sequential transfer of charge)
 2. High power consumption
 3. More expensive
 4. Cannot integrate extra circuitry on the chip
 
 #### Applications
+
 1. Professional photography
 2. Medical imaging
 3. Astronomy
 4. Scientific imaging
 
-
 ### 2. CMOS (Complementary Metal Oxide Semiconductor) Sensor
-- A CMOS sensor converts light into voltage directly at each pixel using individual pixel-level amplifiers.
 
+- A CMOS sensor converts light into voltage directly at each pixel using individual pixel-level amplifiers.
+![alt text](image-16.png)
 #### How CMOS Works
+
 1. Light hits a pixel → creates charge.
 2. Each pixel has its own amplifier or transistor.
 3. Pixel outputs a voltage directly.
 4. Multiple pixels are read simultaneously → very fast.
 5. Diagram (simple text form)
+
 > Light → Pixel Array (each pixel has amplifier) → Parallel Readout → ADCs → Digital Image
 
 #### Advantages
+
 1. Fast readout
 2. Low power consumption
 3. Low manufacturing cost
@@ -224,12 +279,15 @@ The main elements are:
 5. Ideal for real-time applications
 
 #### Disadvantages
+
 1. Higher noise than CCD
 2. Lower image quality (older CMOS)
 3. Non-uniform response between pixels
+
 - (Note: Modern CMOS sensors have greatly improved and now dominate the market.)
 
 #### Applications
+
 1. Mobile phone cameras
 2. CCTV
 3. Webcams
@@ -248,6 +306,7 @@ The main elements are:
 | **Best For**          | Scientific/medical imaging | Phones, security, real-time systems |
 
 ## 📘 Image File Formats
+(BT JPSG)
 - An image file format defines how digital images are stored, compressed, represented, and transmitted.
 - Formats differ in:
     - Compression (lossy / lossless / uncompressed)
@@ -256,10 +315,10 @@ The main elements are:
     - Transparency support
     - File size
     - Quality
-
 - Below are the most important image file formats used in digital image processing.
 
 1. BMP (Bitmap Image Format)
+
 - Type: Uncompressed
 - Color Depth: 1-bit to 24-bit
 - Key Features
@@ -277,8 +336,8 @@ The main elements are:
     - Windows applications
     - When quality is more important than size
 
-
 2. JPEG / JPG (Joint Photographic Experts Group)
+
 - Type: Lossy compression
 - Color Depth: 24-bit RGB
 - Key Features
@@ -298,6 +357,7 @@ The main elements are:
     - Social media
 
 3. PNG (Portable Network Graphics)
+
 - Type: Lossless compression
 - Color Depth: 24-bit, supports transparency (alpha channel)
 - Key Features
@@ -316,7 +376,8 @@ The main elements are:
     - Icons, UI design
     - Images requiring transparency
 
-4. 4. GIF (Graphics Interchange Format)
+4. GIF (Graphics Interchange Format)
+
 - Type: Lossless, 256 colors only
 - Supports: Animation
 - Key Features
@@ -334,7 +395,8 @@ The main elements are:
     - Simple animations
     - Icons
 
-5. 5. TIFF (Tagged Image File Format)
+5. TIFF (Tagged Image File Format)
+
 - Type: Can be lossless or lossy
 - Color Depth: Very high
 - Key Features
@@ -353,6 +415,7 @@ The main elements are:
     - Scientific research
 
 6. SVG (Scalable Vector Graphics)
+- SVG is a vector-based image format, meaning it uses mathematical shapes (lines, curves, points, polygons) instead of pixels.
 - Type: Vector format (not raster)
 - Key Features
     - Uses geometric shapes, lines, paths
@@ -366,18 +429,58 @@ The main elements are:
     - Web icons
     - Infographics
     - UI/UX design
+
 ---
 
-| Format    | Compression      | Quality          | Transparency | Best Use               |
-| --------- | ---------------- | ---------------- | ------------ | ---------------------- |
-| **BMP**   | None             | Excellent        | No           | Processing experiments |
-| **JPEG**  | Lossy            | Good             | No           | Photos                 |
-| **PNG**   | Lossless         | Excellent        | Yes          | Graphics, logos        |
-| **GIF**   | Lossless (8-bit) | Low              | Yes          | Animations             |
-| **TIFF**  | Both             | Excellent        | Yes          | Medical, printing      |
-| **RAW**   | None             | Highest          | No           | Photography            |
-| **SVG**   | Vector           | Infinite scaling | Yes          | Web graphics           |
-| **WEBP**  | Both             | High             | Yes          | Modern web             |
-| **DICOM** | Lossless         | High             | Yes          | Medical imaging        |
+| **Format** | **Compression**  | **Quality**      | **Transparency** | **Real-Life Examples**                                                               |
+| ---------- | ---------------- | ---------------- | ---------------- | ------------------------------------------------------------------------------------ |
+| **BMP**    | None             | Excellent        | No               | Windows default images, basic image storage in older software                        |
+| **JPEG**   | Lossy            | Good             | No               | Mobile camera photos, Facebook/Instagram uploads, product images on e-commerce sites |
+| **PNG**    | Lossless         | Excellent        | Yes              | Website logos, app icons, screenshots, UI elements                                   |
+| **GIF**    | Lossless (8-bit) | Low              | Yes              | Meme animations, WhatsApp stickers, website loading animations                       |
+| **TIFF**   | Both             | Excellent        | Yes              | High-quality scanned documents, magazine print layouts, medical X-ray archives       |
+| **RAW**    | None             | Highest          | No               | DSLR/Professional camera images (e.g., Nikon .NEF, Canon .CR2)                       |
+| **SVG**    | Vector           | Infinite scaling | Yes              | Website logos (Google/YouTube icons), infographics, scalable icons in apps           |
+| **WEBP**   | Both             | High             | Yes              | Images on modern websites (YouTube, WhatsApp Web), performance-optimized site images |
+| **DICOM**  | Lossless         | High             | Yes              | MRI/CT scan image files in hospitals, radiology imaging systems                      |
 
+
+## ⭐ Meaning of Compression in Image Formats
+- Compression in image formats means reducing the file size of an image by encoding it more efficiently, while trying to keep the image quality as good as possible.
+- The goal is:
+    - Use less storage
+    - Load faster on websites
+    - Reduce bandwidth usage
+    - Keep the image visually acceptable
+
+### ⭐ Two Types of Image Compression
+1. 1️⃣ Lossless Compression
+- No data is lost
+- When the image is decompressed, it becomes exactly the same as the original
+- Good for images with sharp edges or text
+- Larger file size compared to lossy compression
+- Examples of lossless formats:
+    - PNG
+    - GIF
+    - BMP (sometimes)
+    - TIFF (can be lossless)
+- Common techniques:
+    - Run-Length Encoding (RLE)
+    - Huffman coding
+    - LZW compression
+    - PNG DEFLATE
+
+2. 2️⃣ Lossy Compression
+- Some image data is removed to reduce file size
+- Human eyes usually cannot notice the lost information
+- Much smaller file sizes
+- But high compression can cause visible artifacts (blurring, blockiness)
+- Examples of lossy formats:
+    - JPEG / JPG
+    - WebP (can be lossy)
+    - HEIC / HEIF
+- How it works:
+    - Removes details not easily noticed by the human eye
+    - Converts image to lower-quality but visually similar version
+    - Uses techniques like DCT (Discrete Cosine Transform)
 

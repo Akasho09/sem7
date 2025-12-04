@@ -80,6 +80,8 @@ is the process of improving the visual appearance of an image or making it more 
 
 ![alt text](image-21.png)
 
+## Multiply with 31 or 15 or 7.
+
 2. Modify histo 1 as given by 2:
 
 ![alt text](image-22.png)
@@ -161,6 +163,21 @@ is the process of improving the visual appearance of an image or making it more 
 - first element to last and so on .
 
 ![alt text](image-40.png)
+
+
+
+## Zooming and Shrinking :
+![alt text](image-45.png)
+
+- ⭐ Coordinate Mapping Equation for Zooming
+- Let the scaling factors be:
+  - 𝑆𝑥 → scaling in x-direction
+  - Sy → scaling in y-direction
+- For an output pixel at location (x′,y′) , the corresponding input pixel (x,y) is:
+    - x=​x′/Sx  ​, y=​y′​/Sy.
+- For an output pixel at location 
+- This is the coordinate transformation equation for zooming.
+
 
 <!-- 
 2. No Linear :
