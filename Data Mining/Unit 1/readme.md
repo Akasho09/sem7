@@ -56,3 +56,46 @@
 - Integration – merging data from various sources.
 - Pattern evaluation – ensuring discovered patterns are meaningful and useful.
 
+
+## Skewness 
+- is a measure of the asymmetry of a distribution around its mean.
+![](image-1.png)
+1. 1️⃣ Positive Skew (Right-Skewed)
+- Tail is longer on the right side
+- Mean > Median > Mode
+- Examples:
+    - Income distribution
+    - Housing prices
+
+2. 2️⃣ Negative Skew (Left-Skewed)
+- Tail is longer on the left side
+- Mean < Median < Mode
+- Examples:
+- Exam scores when most students score high
+- Lifespan data (rarely many very young deaths)
+
+3. 3️⃣ Zero Skew (Symmetric Distribution)
+- Mean = Median = Mode
+- Perfectly symmetric
+- Example:
+- Normal distribution (bell curve)
+
+## A nominal attribute 
+- is a categorical attribute where the values are names or labels with no order or ranking.
+### Proximity measure for nominal Attributes : 
+- 
+    - dissimilarity = (p-m) / p .
+    - simmilarity = 1 - dissimilarity
+- p = 1 for like gender etc and 2 like color = red,green.
+
+## A binary attribute 
+- is a special type of nominal attribute with only two possible values.
+### Proximity measure for binary Attributes : 
+- 
+![alt text](image-2.png)
+![alt text](image-3.png)
+
+## Ordinal Atribute :
+- ![alt text](image.png)
+- dissimilatity = minus of Zif.
+- ![alt text](image-4.png)

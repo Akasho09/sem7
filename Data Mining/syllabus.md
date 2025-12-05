@@ -17,4 +17,5 @@ Linear regression
 Lazy learning - K nearest neighbour 
 Naive Bayesian
 Decision tree
-Bootstraping Bagging Boosting
+Bootstraping Bagging Boosting.
+

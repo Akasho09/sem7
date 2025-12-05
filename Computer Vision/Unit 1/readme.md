@@ -233,8 +233,8 @@ The main elements are:
 4. Output is converted into a digital signal.
 5. Diagram (simple text form)
 
-> Light → Pixel Array → Charge Transfer → Readout Register → ADC → Digital Image
-![alt text](image-15.png)
+> Light → Pixel Array → Charge Transfer → Readout Register → ADC → Digital Image.
+
 #### Advantages
 
 1. Very high image quality
@@ -259,7 +259,9 @@ The main elements are:
 ### 2. CMOS (Complementary Metal Oxide Semiconductor) Sensor
 
 - A CMOS sensor converts light into voltage directly at each pixel using individual pixel-level amplifiers.
+
 ![alt text](image-16.png)
+
 #### How CMOS Works
 
 1. Light hits a pixel → creates charge.
@@ -306,7 +308,9 @@ The main elements are:
 | **Best For**          | Scientific/medical imaging | Phones, security, real-time systems |
 
 ## 📘 Image File Formats
+
 (BT JPSG)
+
 - An image file format defines how digital images are stored, compressed, represented, and transmitted.
 - Formats differ in:
     - Compression (lossy / lossless / uncompressed)
@@ -415,6 +419,7 @@ The main elements are:
     - Scientific research
 
 6. SVG (Scalable Vector Graphics)
+
 - SVG is a vector-based image format, meaning it uses mathematical shapes (lines, curves, points, polygons) instead of pixels.
 - Type: Vector format (not raster)
 - Key Features
@@ -444,8 +449,8 @@ The main elements are:
 | **WEBP**   | Both             | High             | Yes              | Images on modern websites (YouTube, WhatsApp Web), performance-optimized site images |
 | **DICOM**  | Lossless         | High             | Yes              | MRI/CT scan image files in hospitals, radiology imaging systems                      |
 
-
 ## ⭐ Meaning of Compression in Image Formats
+
 - Compression in image formats means reducing the file size of an image by encoding it more efficiently, while trying to keep the image quality as good as possible.
 - The goal is:
     - Use less storage
@@ -454,7 +459,9 @@ The main elements are:
     - Keep the image visually acceptable
 
 ### ⭐ Two Types of Image Compression
+
 1. 1️⃣ Lossless Compression
+
 - No data is lost
 - When the image is decompressed, it becomes exactly the same as the original
 - Good for images with sharp edges or text
@@ -471,6 +478,7 @@ The main elements are:
     - PNG DEFLATE
 
 2. 2️⃣ Lossy Compression
+
 - Some image data is removed to reduce file size
 - Human eyes usually cannot notice the lost information
 - Much smaller file sizes
@@ -483,4 +491,3 @@ The main elements are:
     - Removes details not easily noticed by the human eye
     - Converts image to lower-quality but visually similar version
     - Uses techniques like DCT (Discrete Cosine Transform)
-
