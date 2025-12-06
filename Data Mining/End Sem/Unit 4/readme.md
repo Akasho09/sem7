@@ -79,8 +79,9 @@ where Sv is the subset of S where attribute A has value v.
 - More mixed classes → Gini increases.
 
 ## 6. Bayesian Classification
+- Bayesian Classification is a statistical approach to classification based on Bayes’ Theorem.
 - Uses probability theory and Bayes’ theorem to classify data.
-- Bayes’ Theorem :: 𝑃(𝐶∣𝑋)= (𝑃(𝑋∣𝐶) 𝑃(𝐶)) / 𝑃(𝑋)
+- Bayes’ Theorem :: 𝑃(𝐶∣𝑋)= (𝑃(𝑋∣𝐶) * 𝑃(𝐶)) / 𝑃(𝑋)
     - P(C∣X): posterior probability of class C given X
     - P(C): prior probability of class C
     - P(X∣C): likelihood of observing X given class C
@@ -154,3 +155,22 @@ Error Rate =1−Accuracy= FP+FN / TP+TN+FP+FN
     - More stable estimate of performance.
 - Special case: Leave-One-Out (LOO) cross-validation – k = number of records; train on n−1, test on 1 each time.
 
+
+
+## ⭐ 2. Types of Ensemble Methods
+1. A. Bagging (Bootstrap Aggregating)
+- Train multiple models on random samples WITH replacement.
+- Each model sees a slightly different dataset.
+- Combine predictions using majority vote.
+Example: Random Forest.
+
+2. B. Boosting
+- Models are trained sequentially.
+- Each new model focuses on correcting errors made by the previous one.
+- Example: AdaBoost, Gradient Boosting.
+
+3. C. Stacking
+- Train multiple models.
+- Input their outputs into a meta-learner (another model) that makes the final prediction.
+
+![alt text](image-5.png)

@@ -215,6 +215,9 @@ Continue until no better medoid can be found.
 
 
 4. Density-Based Clustering
+- Density-based clustering groups data points into clusters based on regions of high point density, while separating sparse regions as noise or outliers.
+- Application : Outlier in crowd.
+![alt text](image.png)
     1. DBSCAN (Density-Based Spatial Clustering of Applications with Noise)
     - Clusters are formed by dense regions of data separated by low-density areas.
     - Key Concepts
@@ -223,11 +226,14 @@ Continue until no better medoid can be found.
         - Core Points
         - Border Points
         - Noise/Outliers
-    - steps:
+### steps:
+![alt text](image-1.png)
     1. calculate distnaces .
-    2. Make clusters wrt epsilon.
+    2. Make clusters wrt epsilon and minpts .
     3. identify borders which are in any of the clusters .
+    ![alt text](image-2.png)
     4. some will be noises .
+    ![alt text](image-3.png)
     - Advantages
         - Detects arbitrarily shaped clusters
         - Detects noise and outliers

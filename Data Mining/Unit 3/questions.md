@@ -62,3 +62,40 @@ Meaning:
 
 - So .632 bootstrap weights the more reliable out-of-bag error by 0.632.
 
+## Suppose we havea data of a few individuals who have been surveyed. The response
+to the promotional offer in the areas is listed below. Using Bayes Classification CO-3
+Algorithm classify the sex (output attribute) of a new tuple whose data is
+Investment=No, Travel = Yes, Reading = Yes and Health = No,
+---
+
+![alt text](image-2.png)
+
+1. Compute conditional probabilities
+| Feature    | Value | Count among Males | Probability |
+| ---------- | ----- | ----------------- | ----------- |
+| Investment | No    | 1                 | 1/6         |
+| Travel     | Yes   | 2                 | 2/6 = 1/3   |
+| Reading    | Yes   | 1                 | 1/6         |
+| Health     | No    | 4                 | 4/6 = 2/3   |
+P(X∣M)=61​⋅31​⋅61​⋅32​
+
+| Feature    | Value | Count among Females | Probability |
+| ---------- | ----- | ------------------- | ----------- |
+| Investment | No    | 2                   | 2/4 = 1/2   |
+| Travel     | Yes   | 2                   | 2/4 = 1/2   |
+| Reading    | Yes   | 3                   | 3/4         |
+| Health     | No    | 1                   | 1/4         |
+P(X∣F)=21​⋅21​⋅43​⋅41​
+
+2. 
+P(M∣X)∝0.6×3241​=3240.6​
+P(F∣X)∝0.4×643​=641.2​
+
+| Class  | Value     |
+| ------ | --------- |
+| Male   | ≈ 0.00185 |
+| Female | ≈ 0.01875 |
+
+=> ✅ Female
+
+
