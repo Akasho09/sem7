@@ -45,7 +45,7 @@ is a technique in data mining that finds interesting relationships (associations
     - ✅ Confidence
         - Measures the reliability of the inference made by the rule.
         - Confidence is a measure that indicates how likely it is that item Y will appear in a transaction given that item X is already in the transaction.
-        - Confidence = sigma(A union B)/sigma(A).
+        - Confidence = Support(A union B)/Support(A).
     
     - Lift :
         - In data mining, lift is a measure that evaluates the effectiveness of a predictive model or association rule by comparing its results to a random chance baseline.

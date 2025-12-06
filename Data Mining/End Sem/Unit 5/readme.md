@@ -151,7 +151,7 @@ A popular clustering algorithm that partitions data into k clusters based on min
 
 - Advantages
     - Simple and fast
-    - Works well with large datasets
+    - Works well wit    h large datasets
 
 - Disadvantages
     - Sensitive to initialization

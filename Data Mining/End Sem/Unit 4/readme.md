@@ -148,6 +148,7 @@ Error Rate =1−Accuracy= FP+FN / TP+TN+FP+FN
     - Use fold i as test set.
     - Use remaining k-1 folds as training set.
     - Average accuracy over k runs.
+    ![alt text](image.png)
 - Pros:
     - Every example used for both training and testing.
     - More stable estimate of performance.
