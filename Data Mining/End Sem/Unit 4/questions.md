@@ -97,7 +97,7 @@ Meaning:
 - This forces the next model to focus on difficult examples.
 
 5. 🔷 STEP 5 — Train Second Weak Learner
-
+![alt text](image-11.png)
 
 ## FP-TREE
 1. First pass — item supports (count occurrences)

@@ -1,8 +1,8 @@
 ## 📌 What is Data Preprocessing?
 
 Data preprocessing is a crucial step in the Knowledge Discovery process. It involves preparing and cleaning raw data before applying data mining techniques. The goal is to improve data quality, remove inconsistencies, and transform data into a suitable format for analysis.
-(CS IT)
-
+(CR IT)
+![alt text](image-1.png)
 
 ## DATA 
 - Collection of data objects and their attributes 
@@ -32,7 +32,7 @@ eg: Color , Pincode
 - Median: The middle value when data is sorted.
 - Mode: The most frequently occurring value.
 
-2. Measuring Dispersion
+2. Measuring **Dispersion** (RVSd)
 - Range: Difference between the highest and lowest values.
 - Variance: Measures how data points vary from the mean.
 - Standard Deviation: Square root of variance; shows the spread of data.
@@ -89,7 +89,7 @@ Helps to understand patterns and distributions in data.
 - Ensures that data across different datasets is aligned and merged correctly.
 
 
-### 🔑 6. Data Transformation
+### 🔑 6. Data Transformation (NASA CD)
 1. Smoothing
 - Reduces noise and irregularities in data.
 - Techniques include binning, regression, and clustering.
@@ -120,7 +120,7 @@ Helps to understand patterns and distributions in data.
 - Improves model accuracy and reduces computational complexity.
 
 
-### 🔑 7. Data Reduction
+### 🔑 7. Data Reduction (DN(CHDRS)DD)
 Reduces the volume of data while maintaining its integrity.
 
 - Techniques:
@@ -163,6 +163,3 @@ Reduces the volume of data while maintaining its integrity.
     - Organizes data attributes into hierarchical levels.
     - Example: “City → State → Country.”
     - Supports classification and aggregation tasks.
-
-
-
